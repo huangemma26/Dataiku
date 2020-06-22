@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592852118711
+    "lastModifiedOn": 1592852458132
   },
   "creationTag": {
     "versionNumber": 0,
@@ -123,31 +123,39 @@
         "type": "string"
       },
       {
-        "name": "internal_card_mapping",
+        "name": "card_first_active_month",
         "type": "string"
       },
       {
-        "name": "first_active_month",
+        "name": "card_reward_program",
         "type": "string"
       },
       {
-        "name": "reward_program",
+        "name": "card_latitude",
         "type": "string"
       },
       {
-        "name": "latitude",
+        "name": "card_longitude",
         "type": "string"
       },
       {
-        "name": "longitude",
+        "name": "card_fico_score",
         "type": "string"
       },
       {
-        "name": "fico_score",
+        "name": "card_age",
         "type": "string"
       },
       {
-        "name": "age",
+        "name": "merchant_subsector_description",
+        "type": "string"
+      },
+      {
+        "name": "merchant_latitude",
+        "type": "string"
+      },
+      {
+        "name": "merchant_longitude",
         "type": "string"
       }
     ],
