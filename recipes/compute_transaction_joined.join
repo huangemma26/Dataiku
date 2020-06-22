@@ -198,12 +198,36 @@
   "virtualInputs": [
     {
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "transaction_id",
+              "col": "authorized_flag",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
         "distinct": false,
         "enabled": false
       },
       "autoSelectColumns": false,
       "index": 0,
-      "computedColumns": []
+      "computedColumns": [
+        {
+          "mode": "GREL",
+          "name": "test",
+          "expr": "purchase_amount*2",
+          "type": "double"
+        }
+      ]
     },
     {
       "preFilter": {
@@ -217,7 +241,8 @@
     },
     {
       "prefix": "merchant",
-      "index": 2
+      "index": 2,
+      "computedColumns": []
     }
   ],
   "computedColumns": [],
