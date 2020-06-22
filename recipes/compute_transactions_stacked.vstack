@@ -69,6 +69,65 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "authorized_flag",
+            "type": "string"
+          },
+          {
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "name": "city_id",
+            "type": "string"
+          },
+          {
+            "name": "category_1",
+            "type": "string"
+          },
+          {
+            "name": "installments",
+            "type": "string"
+          },
+          {
+            "name": "category_3",
+            "type": "string"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "string"
+          },
+          {
+            "name": "month_lag",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "string"
+          },
+          {
+            "name": "purchase_date",
+            "type": "string"
+          },
+          {
+            "name": "category_2",
+            "type": "string"
+          },
+          {
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "name": "signature_provided",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
