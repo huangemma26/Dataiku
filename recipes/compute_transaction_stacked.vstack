@@ -65,6 +65,49 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "transaction_id",
+            "type": "string"
+          },
+          {
+            "name": "authorized_flag",
+            "type": "string"
+          },
+          {
+            "name": "purchase_date",
+            "type": "string"
+          },
+          {
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "string"
+          },
+          {
+            "name": "item_category",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "string"
+          },
+          {
+            "name": "signature_provided",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
