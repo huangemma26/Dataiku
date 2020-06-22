@@ -4,75 +4,161 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "card_id",
+            "table": 0
+          },
+          "column2": {
+            "name": "internal_card_mapping",
+            "table": 1
+          },
+          "maxDistance": 1,
+          "type": "EQ"
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "merchant_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "merchant_id",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "merchant_category_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "merchant_category_id",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "transaction_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "authorized_flag",
+      "type": "string",
       "table": 0
     },
     {
       "name": "purchase_date",
+      "type": "string",
       "table": 0
     },
     {
       "name": "card_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "merchant_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "merchant_category_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "item_category",
+      "type": "string",
       "table": 0
     },
     {
       "name": "purchase_amount",
+      "type": "string",
       "table": 0
     },
     {
       "name": "signature_provided",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "internal_card_mapping",
-      "table": 1
-    },
-    {
       "name": "first_active_month",
+      "type": "string",
       "table": 1
     },
     {
       "name": "reward_program",
+      "type": "string",
       "table": 1
     },
     {
       "name": "latitude",
+      "type": "string",
       "table": 1
     },
     {
       "name": "longitude",
+      "type": "string",
       "table": 1
     },
     {
       "name": "fico_score",
+      "type": "string",
       "table": 1
     },
     {
       "name": "age",
+      "type": "string",
       "table": 1
+    },
+    {
+      "name": "subsector_description",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "latitude",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "longitude",
+      "type": "string",
+      "table": 2
     }
   ],
   "engineParams": {
@@ -125,9 +211,96 @@
         "enabled": false
       },
       "autoSelectColumns": false,
+      "prefix": "card",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "prefix": "merchant",
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "transaction_id",
+            "type": "string"
+          },
+          {
+            "name": "authorized_flag",
+            "type": "string"
+          },
+          {
+            "name": "purchase_date",
+            "type": "string"
+          },
+          {
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "string"
+          },
+          {
+            "name": "item_category",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "string"
+          },
+          {
+            "name": "signature_provided",
+            "type": "string"
+          },
+          {
+            "name": "card_first_active_month",
+            "type": "string"
+          },
+          {
+            "name": "card_reward_program",
+            "type": "string"
+          },
+          {
+            "name": "card_latitude",
+            "type": "string"
+          },
+          {
+            "name": "card_longitude",
+            "type": "string"
+          },
+          {
+            "name": "card_fico_score",
+            "type": "string"
+          },
+          {
+            "name": "card_age",
+            "type": "string"
+          },
+          {
+            "name": "merchant_subsector_description",
+            "type": "string"
+          },
+          {
+            "name": "merchant_latitude",
+            "type": "string"
+          },
+          {
+            "name": "merchant_longitude",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

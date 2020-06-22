@@ -17,6 +17,10 @@
         {
           "ref": "cardholder_info",
           "deps": []
+        },
+        {
+          "ref": "merchant_info",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592852118714
+    "lastModifiedOn": 1592852458222
   },
   "creationTag": {
     "versionNumber": 0,
