@@ -1,0 +1,453 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "json",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "nestedArraysHandling": "PRESERVE",
+    "extractFromSingleElement": false,
+    "nestedArraysMaxElements": 100,
+    "nestedArraysMaxContentSize": 300000,
+    "headerRow": false
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1592850518353
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1592850518353
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "bcecb48c17b97d3f18d656f7645eee0f00cd0617ed69cfae4afbc7af54120315",
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "managed",
+        "type": "string"
+      },
+      {
+        "name": "formatType",
+        "type": "string"
+      },
+      {
+        "name": "checklists.checklists",
+        "type": "string"
+      },
+      {
+        "name": "flowOptions.virtualizable",
+        "type": "string"
+      },
+      {
+        "name": "flowOptions.rebuildBehavior",
+        "type": "string"
+      },
+      {
+        "name": "flowOptions.crossProjectBuildBehavior",
+        "type": "string"
+      },
+      {
+        "name": "readWriteOptions.preserveOrder",
+        "type": "string"
+      },
+      {
+        "name": "readWriteOptions.writeBuckets",
+        "type": "string"
+      },
+      {
+        "name": "readWriteOptions.forceSingleOutputFile",
+        "type": "string"
+      },
+      {
+        "name": "readWriteOptions.defaultReadOrdering.enabled",
+        "type": "string"
+      },
+      {
+        "name": "readWriteOptions.defaultReadOrdering.rules",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.style",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.charset",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.separator",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.quoteChar",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.escapeChar",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.dateSerializationFormat",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.arrayMapFormat",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.hiveSeparators",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.skipRowsBeforeHeader",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.parseHeaderRow",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.skipRowsAfterHeader",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.probableNumberOfRecords",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.normalizeBooleans",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.normalizeDoubles",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.readAdditionalColumnsBehavior",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.readMissingColumnsBehavior",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.readDataTypeMismatchBehavior",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.writeDataTypeMismatchBehavior",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.fileReadFailureBehavior",
+        "type": "string"
+      },
+      {
+        "name": "formatParams.compress",
+        "type": "string"
+      },
+      {
+        "name": "partitioning.ignoreNonMatchingFile",
+        "type": "string"
+      },
+      {
+        "name": "partitioning.considerMissingRequestedPartitionsAsEmpty",
+        "type": "string"
+      },
+      {
+        "name": "partitioning.dimensions",
+        "type": "string"
+      },
+      {
+        "name": "versionTag.versionNumber",
+        "type": "string"
+      },
+      {
+        "name": "versionTag.lastModifiedBy.login",
+        "type": "string"
+      },
+      {
+        "name": "versionTag.lastModifiedOn",
+        "type": "string"
+      },
+      {
+        "name": "creationTag.versionNumber",
+        "type": "string"
+      },
+      {
+        "name": "creationTag.lastModifiedBy.login",
+        "type": "string"
+      },
+      {
+        "name": "creationTag.lastModifiedOn",
+        "type": "string"
+      },
+      {
+        "name": "tags",
+        "type": "string"
+      },
+      {
+        "name": "params.uploadConnection",
+        "type": "string"
+      },
+      {
+        "name": "params.notReadyIfEmpty",
+        "type": "string"
+      },
+      {
+        "name": "params.filesSelectionRules.mode",
+        "type": "string"
+      },
+      {
+        "name": "params.filesSelectionRules.excludeRules",
+        "type": "string"
+      },
+      {
+        "name": "params.filesSelectionRules.includeRules",
+        "type": "string"
+      },
+      {
+        "name": "params.filesSelectionRules.explicitFiles",
+        "type": "string"
+      },
+      {
+        "name": "schema.columns",
+        "type": "string"
+      },
+      {
+        "name": "schema.userModified",
+        "type": "string"
+      },
+      {
+        "name": "metrics.probes",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.padRunsWithMetrics",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.hive.active",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.hive.extraConf",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.active",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.useMemTable",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.filter.distinct",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.filter.enabled",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.partitionSelectionMethod",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.latestPartitionsN",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.ordering.enabled",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.ordering.rules",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.samplingMethod",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.maxRecords",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.targetRatio",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.withinFirstN",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.dss.selection.maxReadUncompressedBytes",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.sql.active",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.impala.active",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.spark.active",
+        "type": "string"
+      },
+      {
+        "name": "metrics.engineConfig.spark.extraConf",
+        "type": "string"
+      },
+      {
+        "name": "metrics.displayedState.columns",
+        "type": "string"
+      },
+      {
+        "name": "metrics.displayedState.metrics",
+        "type": "string"
+      },
+      {
+        "name": "metricsChecks.runOnBuild",
+        "type": "string"
+      },
+      {
+        "name": "metricsChecks.checks",
+        "type": "string"
+      },
+      {
+        "name": "metricsChecks.displayedState.checks",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
