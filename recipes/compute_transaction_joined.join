@@ -220,14 +220,7 @@
       },
       "autoSelectColumns": false,
       "index": 0,
-      "computedColumns": [
-        {
-          "mode": "GREL",
-          "name": "test",
-          "expr": "purchase_amount*2",
-          "type": "double"
-        }
-      ]
+      "computedColumns": []
     },
     {
       "preFilter": {
