@@ -103,7 +103,7 @@
           "alwaysShowComment": false
         },
         {
-          "preview": true,
+          "preview": false,
           "metaType": "PROCESSOR",
           "disabled": false,
           "type": "DateDifference",
@@ -120,6 +120,77 @@
       ],
       "alwaysShowComment": false,
       "secondaryColor": "#cae8f4"
+    },
+    {
+      "preview": false,
+      "mainColor": "#ff9c00",
+      "name": "Geoencoding",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "merchant_location",
+            "lat_column": "merchant_latitude",
+            "lon_column": "merchant_longitude"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "card_location",
+            "lat_column": "card_latitude",
+            "lon_column": "card_longitude"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CityLevelReverseGeocoder",
+          "params": {
+            "l4OutCol": "merchant_state",
+            "inputCol": "merchant_location"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CityLevelReverseGeocoder",
+          "params": {
+            "l4OutCol": "card_state",
+            "inputCol": "card_location"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": true,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "output": "merchant_cardholder_distance",
+            "input2": "merchant_location",
+            "outputUnit": "MILES",
+            "input1": "card_location",
+            "compareTo": "COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#f4e0c1"
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -138,10 +209,14 @@
     "merchant_id": 127,
     "card_longitude": 120,
     "item_category": 113,
+    "merchant_state_enName": 173,
     "purchase_date_parsed": 190,
+    "card_state": 120,
+    "card_state_enName": 143,
     "signature_provided": 150,
     "card_age": 100,
     "purchase_dow": 105,
+    "merchant_cardholder_distance": 225,
     "card_first_active_month_parsed": 260,
     "transaction_id": 120,
     "purchase_year": 113,
@@ -149,15 +224,18 @@
     "card_first_active_month": 188,
     "days_active": 100,
     "card_latitude": 113,
+    "merchant_location": 169,
     "merchant_category_id": 165,
     "card_id": 120,
     "merchant_subsector_description": 240,
     "merchant_longitude": 150,
     "purchase_date_parsed_year": 203,
     "purchase_hour": 113,
+    "card_location": 169,
     "purchase_amount": 128,
     "card_reward_program": 158,
     "purchase_date_parsed_month": 210,
+    "merchant_state": 120,
     "purchase_date": 148,
     "authorized_flag": 128
   },
