@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592870668831
+    "lastModifiedOn": 1593053351507
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,6 +99,34 @@
         "type": "string"
       },
       {
+        "name": "purchase_date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "purchase_year",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_month",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_day",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_dow",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_weekend",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_hour",
+        "type": "bigint"
+      },
+      {
         "name": "card_id",
         "type": "string"
       },
@@ -125,6 +153,14 @@
       {
         "name": "card_first_active_month",
         "type": "string"
+      },
+      {
+        "name": "card_first_active_month_parsed",
+        "type": "date"
+      },
+      {
+        "name": "days_active",
+        "type": "bigint"
       },
       {
         "name": "card_reward_program",
