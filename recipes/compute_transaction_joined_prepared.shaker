@@ -25,8 +25,103 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "mainColor": "#30c2ff",
+      "name": "Date Formatting",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "card_first_active_month_parsed",
+            "formats": [
+              "yyyy-MM"
+            ],
+            "columns": [
+              "card_first_active_month"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "purchase_date_parsed",
+            "formats": [
+              "yyyy-MM-dd HH:mm:ss"
+            ],
+            "columns": [
+              "purchase_date"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateComponentsExtractor",
+          "params": {
+            "outMonthColumn": "purchase_month",
+            "outHourColumn": "purchase_hour",
+            "outYearColumn": "purchase_year",
+            "column": "purchase_date_parsed",
+            "outDayOfWeekColumn": "purchase_dow",
+            "timezone_id": "UTC",
+            "outDayColumn": "purchase_day"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if(purchase_dow\u003e5,1,0)",
+            "column": "purchase_weekend"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": true,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "days_active",
+            "input2": "purchase_date_parsed",
+            "outputUnit": "DAYS",
+            "input1": "card_first_active_month_parsed",
+            "compareTo": "COLUMN",
+            "reverse": false
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#cae8f4"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +129,38 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "merchant_latitude": 143,
+    "purchase_date_parsed_day": 195,
+    "purchase_day": 105,
+    "card_fico_score": 128,
+    "purchase_month": 120,
+    "merchant_id": 127,
+    "card_longitude": 120,
+    "item_category": 113,
+    "purchase_date_parsed": 190,
+    "signature_provided": 150,
+    "card_age": 100,
+    "purchase_dow": 105,
+    "card_first_active_month_parsed": 260,
+    "transaction_id": 120,
+    "purchase_year": 113,
+    "purchase_weekend": 135,
+    "card_first_active_month": 188,
+    "days_active": 100,
+    "card_latitude": 113,
+    "merchant_category_id": 165,
+    "card_id": 120,
+    "merchant_subsector_description": 240,
+    "merchant_longitude": 150,
+    "purchase_date_parsed_year": 203,
+    "purchase_hour": 113,
+    "purchase_amount": 128,
+    "card_reward_program": 158,
+    "purchase_date_parsed_month": 210,
+    "purchase_date": 148,
+    "authorized_flag": 128
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
