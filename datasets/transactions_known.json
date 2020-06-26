@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593137180566
+    "lastModifiedOn": 1593137244412
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,144 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "transaction_id",
+        "type": "bigint"
+      },
+      {
+        "name": "authorized_flag",
+        "type": "string"
+      },
+      {
+        "name": "purchase_date",
+        "type": "string"
+      },
+      {
+        "name": "purchase_date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "purchase_year",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_month",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_day",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_dow",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_weekend",
+        "type": "bigint"
+      },
+      {
+        "name": "purchase_hour",
+        "type": "bigint"
+      },
+      {
+        "name": "card_id",
+        "type": "string"
+      },
+      {
+        "name": "merchant_id",
+        "type": "string"
+      },
+      {
+        "name": "merchant_category_id",
+        "type": "bigint"
+      },
+      {
+        "name": "item_category",
+        "type": "string"
+      },
+      {
+        "name": "purchase_amount",
+        "type": "double"
+      },
+      {
+        "name": "signature_provided",
+        "type": "bigint"
+      },
+      {
+        "name": "card_first_active_month",
+        "type": "string"
+      },
+      {
+        "name": "card_first_active_month_parsed",
+        "type": "date"
+      },
+      {
+        "name": "days_active",
+        "type": "bigint"
+      },
+      {
+        "name": "card_reward_program",
+        "type": "string"
+      },
+      {
+        "name": "card_latitude",
+        "type": "double"
+      },
+      {
+        "name": "card_longitude",
+        "type": "double"
+      },
+      {
+        "name": "card_fico_score",
+        "type": "bigint"
+      },
+      {
+        "name": "card_age",
+        "type": "bigint"
+      },
+      {
+        "name": "merchant_subsector_description",
+        "type": "string"
+      },
+      {
+        "name": "merchant_latitude",
+        "type": "double"
+      },
+      {
+        "name": "merchant_longitude",
+        "type": "double"
+      },
+      {
+        "name": "merchant_location",
+        "type": "string"
+      },
+      {
+        "name": "merchant_cardholder_distance",
+        "type": "double"
+      },
+      {
+        "name": "merchant_state",
+        "type": "string"
+      },
+      {
+        "name": "merchant_state_enName",
+        "type": "string"
+      },
+      {
+        "name": "card_location",
+        "type": "string"
+      },
+      {
+        "name": "card_state",
+        "type": "string"
+      },
+      {
+        "name": "card_state_enName",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
