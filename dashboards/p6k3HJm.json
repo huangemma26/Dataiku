@@ -49,6 +49,25 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 4,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "Credit Card Fraud Patterns",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -61,11 +80,11 @@
   "name": "CC_Discovery\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593136755888
+    "lastModifiedOn": 1593136785326
   },
   "creationTag": {
     "versionNumber": 0,
