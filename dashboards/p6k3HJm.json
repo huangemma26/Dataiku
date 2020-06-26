@@ -61,11 +61,11 @@
   "name": "CC_Discovery\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593136747334
+    "lastModifiedOn": 1593136755888
   },
   "creationTag": {
     "versionNumber": 0,
