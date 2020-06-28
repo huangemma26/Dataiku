@@ -5,11 +5,11 @@
   "name": "test",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593381765271
+    "lastModifiedOn": 1593382032252
   },
   "checklists": {
     "checklists": []
@@ -20,10 +20,54 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "xnvx236K",
+      "type": "temporal",
+      "name": "daily",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "frequency": "Daily",
+        "daysOfWeek": [
+          "Saturday"
+        ],
+        "dayOfMonth": 1,
+        "minute": 0,
+        "hour": 2,
+        "count": 5
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "check_true_d_transaction_joined_prepared",
+        "type": "check_dataset",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "DATASET",
+              "itemId": "transaction_joined_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
