@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "card_id"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "card_id",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,13 +26,16 @@
       "firstLastNotNull": false,
       "column": "purchase_amount",
       "count": false,
-      "sum": false,
+      "$idx": 0,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -31,13 +45,16 @@
       "firstLastNotNull": false,
       "column": "reward_cash_back",
       "count": false,
-      "sum": false,
+      "$idx": 1,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,15 +64,20 @@
       "firstLastNotNull": false,
       "column": "card_reward_program",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "card_id",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -63,15 +85,20 @@
       "firstLastNotNull": false,
       "column": "card_fico_score",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
-      "first": false
+      "first": true,
+      "orderColumn": "card_id",
+      "concatSeparator": ","
     },
     {
       "last": false,
@@ -79,8 +106,10 @@
       "firstLastNotNull": false,
       "column": "merchant_subsector_description",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -95,13 +124,16 @@
       "firstLastNotNull": false,
       "column": "reward_travel",
       "count": false,
-      "sum": false,
+      "$idx": 5,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -111,13 +143,16 @@
       "firstLastNotNull": false,
       "column": "reward_dining_entertainment",
       "count": false,
-      "sum": false,
+      "$idx": 6,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -158,8 +193,48 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount_sum",
+            "type": "double"
+          },
+          {
+            "name": "reward_cash_back_sum",
+            "type": "double"
+          },
+          {
+            "name": "card_reward_program_first",
+            "type": "string"
+          },
+          {
+            "name": "card_fico_score_first",
+            "type": "bigint"
+          },
+          {
+            "name": "reward_travel_sum",
+            "type": "double"
+          },
+          {
+            "name": "reward_dining_entertainment_sum",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
