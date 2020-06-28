@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593319885094
+    "lastModifiedOn": 1593320531168
   },
   "creationTag": {
     "versionNumber": 0,
@@ -115,8 +115,28 @@
         "type": "double"
       },
       {
+        "name": "best_reward_program",
+        "type": "string"
+      },
+      {
         "name": "count",
         "type": "bigint"
+      },
+      {
+        "name": "best_reward_amount",
+        "type": "double"
+      },
+      {
+        "name": "current_reward_amount",
+        "type": "double"
+      },
+      {
+        "name": "value_add",
+        "type": "double"
+      },
+      {
+        "name": "switch",
+        "type": "string"
       }
     ],
     "userModified": true
