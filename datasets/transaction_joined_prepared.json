@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593381151829
+    "lastModifiedOn": 1593381578839
   },
   "creationTag": {
     "versionNumber": 0,
@@ -356,7 +356,25 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "col_stats:MEAN:purchase_amount",
+        "minimum": 100.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": true,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "Avg_purchase"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []
