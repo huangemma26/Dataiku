@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593319656996
+    "lastModifiedOn": 1593319725171
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,30 @@
       {
         "name": "card_id",
         "type": "string"
+      },
+      {
+        "name": "purchase_amount_sum",
+        "type": "double"
+      },
+      {
+        "name": "reward_cash_back_sum",
+        "type": "double"
+      },
+      {
+        "name": "card_reward_program_first",
+        "type": "string"
+      },
+      {
+        "name": "card_fico_score_first",
+        "type": "bigint"
+      },
+      {
+        "name": "reward_travel_sum",
+        "type": "double"
+      },
+      {
+        "name": "reward_dining_entertainment_sum",
+        "type": "double"
       },
       {
         "name": "count",
