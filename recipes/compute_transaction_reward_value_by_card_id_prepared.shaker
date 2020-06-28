@@ -25,8 +25,67 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(and(reward_cash_back_sum \u003e\u003d reward_travel_sum, reward_cash_back_sum \u003e\u003d reward_dining_entertainment_sum), \"cash_back\", if(and(reward_dining_entertainment_sum \u003e\u003d reward_cash_back_sum, reward_dining_entertainment_sum \u003e\u003d reward_travel_sum), \"dining_entertainment\", \"travel\"))",
+        "column": "best_reward_program"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "cells[\"reward_\" + best_reward_program + \"_sum\"].value",
+        "column": "best_reward_amount"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "cells[\"reward_\" + card_reward_program_first + \"_sum\"].value",
+        "column": "current_reward_amount"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "best_reward_amount - current_reward_amount",
+        "column": "value_add"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(value_add\u003e0, concat(card_reward_program_first, \" --\u003e \", best_reward_program), \"no switch\")",
+        "column": "switch"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +93,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "best_reward_amount": 176,
+    "count": 100,
+    "newcolumn_expression": 165,
+    "reward_travel_sum": 169,
+    "current_reward_amount": 173,
+    "card_id": 120,
+    "switch": 253,
+    "card_fico_score_first": 173,
+    "value_add": 113,
+    "reward_dining_entertainment_sum": 248,
+    "best_reward_program": 158,
+    "card_reward_program_first": 203,
+    "purchase_amount_sum": 158,
+    "reward_cash_back_sum": 165
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
