@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "transaction_id",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -35,9 +38,11 @@
       "firstLastNotNull": false,
       "column": "authorized_flag",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +63,11 @@
       "firstLastNotNull": false,
       "column": "purchase_date",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +88,11 @@
       "firstLastNotNull": false,
       "column": "purchase_date_parsed",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +113,11 @@
       "firstLastNotNull": false,
       "column": "purchase_year",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -127,9 +138,11 @@
       "firstLastNotNull": false,
       "column": "purchase_month",
       "count": false,
+      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -150,9 +163,11 @@
       "firstLastNotNull": false,
       "column": "purchase_day",
       "count": false,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -173,9 +188,11 @@
       "firstLastNotNull": false,
       "column": "purchase_dow",
       "count": false,
+      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -196,9 +213,11 @@
       "firstLastNotNull": false,
       "column": "purchase_weekend",
       "count": false,
+      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -219,9 +238,11 @@
       "firstLastNotNull": false,
       "column": "purchase_hour",
       "count": false,
+      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -242,9 +263,11 @@
       "firstLastNotNull": false,
       "column": "card_id",
       "count": false,
+      "$idx": 10,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -265,9 +288,11 @@
       "firstLastNotNull": false,
       "column": "merchant_id",
       "count": false,
+      "$idx": 11,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -288,9 +313,11 @@
       "firstLastNotNull": false,
       "column": "merchant_category_id",
       "count": false,
+      "$idx": 12,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -311,9 +338,11 @@
       "firstLastNotNull": false,
       "column": "item_category",
       "count": false,
+      "$idx": 13,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -330,21 +359,24 @@
     {
       "last": false,
       "lagDiff": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "purchase_amount",
       "count": false,
+      "$idx": 14,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
-      "min": false,
+      "min": true,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -357,9 +389,11 @@
       "firstLastNotNull": false,
       "column": "signature_provided",
       "count": false,
+      "$idx": 15,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -380,9 +414,11 @@
       "firstLastNotNull": false,
       "column": "card_first_active_month",
       "count": false,
+      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -403,9 +439,11 @@
       "firstLastNotNull": false,
       "column": "card_first_active_month_parsed",
       "count": false,
+      "$idx": 17,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "date",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -426,9 +464,11 @@
       "firstLastNotNull": false,
       "column": "days_active",
       "count": false,
+      "$idx": 18,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -449,9 +489,11 @@
       "firstLastNotNull": false,
       "column": "card_reward_program",
       "count": false,
+      "$idx": 19,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -472,9 +514,11 @@
       "firstLastNotNull": false,
       "column": "card_latitude",
       "count": false,
+      "$idx": 20,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -495,9 +539,11 @@
       "firstLastNotNull": false,
       "column": "card_longitude",
       "count": false,
+      "$idx": 21,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -518,9 +564,11 @@
       "firstLastNotNull": false,
       "column": "card_fico_score",
       "count": false,
+      "$idx": 22,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -541,9 +589,11 @@
       "firstLastNotNull": false,
       "column": "card_age",
       "count": false,
+      "$idx": 23,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -564,9 +614,11 @@
       "firstLastNotNull": false,
       "column": "merchant_subsector_description",
       "count": false,
+      "$idx": 24,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -587,9 +639,11 @@
       "firstLastNotNull": false,
       "column": "merchant_latitude",
       "count": false,
+      "$idx": 25,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -610,9 +664,11 @@
       "firstLastNotNull": false,
       "column": "merchant_longitude",
       "count": false,
+      "$idx": 26,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -633,9 +689,11 @@
       "firstLastNotNull": false,
       "column": "merchant_location",
       "count": false,
+      "$idx": 27,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -656,9 +714,11 @@
       "firstLastNotNull": false,
       "column": "merchant_cardholder_distance",
       "count": false,
+      "$idx": 28,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -679,9 +739,11 @@
       "firstLastNotNull": false,
       "column": "merchant_state",
       "count": false,
+      "$idx": 29,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -702,9 +764,11 @@
       "firstLastNotNull": false,
       "column": "merchant_state_enName",
       "count": false,
+      "$idx": 30,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -725,9 +789,11 @@
       "firstLastNotNull": false,
       "column": "card_location",
       "count": false,
+      "$idx": 31,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -748,9 +814,11 @@
       "firstLastNotNull": false,
       "column": "card_state",
       "count": false,
+      "$idx": 32,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -771,9 +839,11 @@
       "firstLastNotNull": false,
       "column": "card_state_enName",
       "count": false,
+      "$idx": 33,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -791,20 +861,215 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
-      "enableOrdering": false,
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
+      "enableOrdering": true,
       "precedingRows": 0,
-      "limitFollowing": false,
-      "orders": [],
-      "limitPreceding": false,
+      "prefix": "card",
+      "limitFollowing": true,
       "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
+      "partitioningColumns": [
+        "card_id"
+      ],
+      "windowLimitMode": "ROWS",
+      "orders": [
+        {
+          "column": "purchase_date_parsed",
+          "desc": false
+        }
+      ],
+      "limitPreceding": false,
+      "windowLowerBound": 0,
+      "enableLimits": true
+    },
+    {
+      "windowLimitMode": "ROWS",
+      "enablePartitioning": true,
+      "prefix": "merchant",
+      "enableOrdering": true,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "purchase_date_parsed",
+          "desc": false
+        }
+      ],
+      "followingRows": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "merchant_id"
+      ]
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "transaction_id",
+            "type": "bigint"
+          },
+          {
+            "name": "authorized_flag",
+            "type": "string"
+          },
+          {
+            "name": "purchase_date",
+            "type": "string"
+          },
+          {
+            "name": "purchase_date_parsed",
+            "type": "date"
+          },
+          {
+            "name": "purchase_year",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_month",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_day",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_dow",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_weekend",
+            "type": "bigint"
+          },
+          {
+            "name": "purchase_hour",
+            "type": "bigint"
+          },
+          {
+            "name": "card_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_id",
+            "type": "string"
+          },
+          {
+            "name": "merchant_category_id",
+            "type": "bigint"
+          },
+          {
+            "name": "item_category",
+            "type": "string"
+          },
+          {
+            "name": "purchase_amount",
+            "type": "double"
+          },
+          {
+            "name": "signature_provided",
+            "type": "bigint"
+          },
+          {
+            "name": "card_first_active_month",
+            "type": "string"
+          },
+          {
+            "name": "card_first_active_month_parsed",
+            "type": "date"
+          },
+          {
+            "name": "days_active",
+            "type": "bigint"
+          },
+          {
+            "name": "card_reward_program",
+            "type": "string"
+          },
+          {
+            "name": "card_latitude",
+            "type": "double"
+          },
+          {
+            "name": "card_longitude",
+            "type": "double"
+          },
+          {
+            "name": "card_fico_score",
+            "type": "bigint"
+          },
+          {
+            "name": "card_age",
+            "type": "bigint"
+          },
+          {
+            "name": "merchant_subsector_description",
+            "type": "string"
+          },
+          {
+            "name": "merchant_latitude",
+            "type": "double"
+          },
+          {
+            "name": "merchant_longitude",
+            "type": "double"
+          },
+          {
+            "name": "merchant_location",
+            "type": "string"
+          },
+          {
+            "name": "merchant_cardholder_distance",
+            "type": "double"
+          },
+          {
+            "name": "merchant_state",
+            "type": "string"
+          },
+          {
+            "name": "merchant_state_enName",
+            "type": "string"
+          },
+          {
+            "name": "card_location",
+            "type": "string"
+          },
+          {
+            "name": "card_state",
+            "type": "string"
+          },
+          {
+            "name": "card_state_enName",
+            "type": "string"
+          },
+          {
+            "name": "card_purchase_amount_min",
+            "type": "double"
+          },
+          {
+            "name": "card_purchase_amount_max",
+            "type": "double"
+          },
+          {
+            "name": "card_purchase_amount_avg",
+            "type": "double"
+          },
+          {
+            "name": "merchant_purchase_amount_min",
+            "type": "double"
+          },
+          {
+            "name": "merchant_purchase_amount_max",
+            "type": "double"
+          },
+          {
+            "name": "merchant_purchase_amount_avg",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -846,5 +1111,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
 }
