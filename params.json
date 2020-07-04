@@ -123,7 +123,6 @@
     }
   },
   "name": "CC_Discovery",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -179,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593136505573
+    "lastModifiedOn": 1593823440089
   },
   "creationTag": {
     "versionNumber": 0,
@@ -193,7 +192,9 @@
     "lastModifiedOn": 1592356920445
   },
   "shortDesc": "The project *CC_Discovery* was created by Administrator on Jun 16th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
