@@ -11,7 +11,7 @@
     "main": {
       "items": [
         {
-          "ref": "transaction_joined_prepared",
+          "ref": "transaction_joined_prepared_windows",
           "deps": []
         }
       ]
@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593137244459
+    "lastModifiedOn": 1593826943603
   },
   "creationTag": {
     "versionNumber": 0,

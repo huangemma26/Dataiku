@@ -92,7 +92,7 @@
           "conditions": [
             {
               "input": "authorized_flag",
-              "col": "authorized_flag",
+              "col": "transaction_id",
               "num": 0,
               "operator": "not empty"
             }
@@ -239,7 +239,7 @@
               }
             ]
           },
-          "validated": false,
+          "validated": true,
           "fullyTranslated": false,
           "ok": false,
           "message": "Filter expression is invalid"
