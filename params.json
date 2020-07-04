@@ -122,7 +122,7 @@
       }
     }
   },
-  "name": "CC_Discovery",
+  "name": "CC_Advanced_core",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -178,11 +178,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593823440089
+    "lastModifiedOn": 1593823449776
   },
   "creationTag": {
     "versionNumber": 0,
@@ -191,7 +191,7 @@
     },
     "lastModifiedOn": 1592356920445
   },
-  "shortDesc": "The project *CC_Discovery* was created by Administrator on Jun 16th 2020",
+  "shortDesc": "The project *CC_Discovery* was created by Administrator on Jun 16th 2020\nThe project *CC_ADVANCED_CORE* was copied from *CC_DISCOVERY* by Administrator on Jul 03rd 2020",
   "tags": [
     "duplicated"
   ],
