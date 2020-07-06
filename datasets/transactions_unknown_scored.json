@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593210586871
+    "lastModifiedOn": 1594059724165
   },
   "creationTag": {
     "versionNumber": 0,
@@ -221,6 +221,30 @@
       {
         "name": "card_state_enName",
         "type": "string"
+      },
+      {
+        "name": "card_purchase_amount_min",
+        "type": "double"
+      },
+      {
+        "name": "card_purchase_amount_max",
+        "type": "double"
+      },
+      {
+        "name": "card_purchase_amount_avg",
+        "type": "double"
+      },
+      {
+        "name": "merchant_purchase_amount_min",
+        "type": "double"
+      },
+      {
+        "name": "merchant_purchase_amount_max",
+        "type": "double"
+      },
+      {
+        "name": "merchant_purchase_amount_avg",
+        "type": "double"
       },
       {
         "name": "proba_0",
