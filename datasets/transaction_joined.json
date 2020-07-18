@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116675547
+    "lastModifiedOn": 1595116679138
   },
   "creationTag": {
     "versionNumber": 0,
@@ -136,7 +136,7 @@
       },
       {
         "name": "card_longitude",
-        "type": "string"
+        "type": "float"
       },
       {
         "name": "card_fico_score",
