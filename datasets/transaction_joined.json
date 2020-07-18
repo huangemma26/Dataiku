@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592852458132
+    "lastModifiedOn": 1595116589987
   },
   "creationTag": {
     "versionNumber": 0,
@@ -116,7 +116,7 @@
       },
       {
         "name": "purchase_amount",
-        "type": "string"
+        "type": "float"
       },
       {
         "name": "signature_provided",
