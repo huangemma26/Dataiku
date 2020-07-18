@@ -1,0 +1,69 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "transaction_id": 120,
+      "authorized_flag": 128,
+      "purchase_date": 148,
+      "card_id": 120,
+      "merchant_id": 127,
+      "merchant_category_id": 60,
+      "item_category": 113,
+      "purchase_amount": 128,
+      "signature_provided": 150,
+      "card_first_active_month": 188,
+      "card_reward_program": 158,
+      "card_latitude": 113,
+      "card_longitude": 120,
+      "card_fico_score": 128,
+      "card_age": 100,
+      "merchant_subsector_description": 240,
+      "merchant_latitude": 143,
+      "merchant_longitude": 150
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}
