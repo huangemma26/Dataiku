@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116648314
+    "lastModifiedOn": 1595116660133
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,7 +120,7 @@
       },
       {
         "name": "signature_provided",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "card_first_active_month",
