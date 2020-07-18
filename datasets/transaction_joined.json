@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116685439
+    "lastModifiedOn": 1595116691751
   },
   "creationTag": {
     "versionNumber": 0,
@@ -152,7 +152,7 @@
       },
       {
         "name": "merchant_latitude",
-        "type": "string"
+        "type": "float"
       },
       {
         "name": "merchant_longitude",
