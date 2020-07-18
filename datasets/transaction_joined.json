@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116660133
+    "lastModifiedOn": 1595116666312
   },
   "creationTag": {
     "versionNumber": 0,
@@ -124,7 +124,7 @@
       },
       {
         "name": "card_first_active_month",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "card_reward_program",
