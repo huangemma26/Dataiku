@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116639875
+    "lastModifiedOn": 1595116648314
   },
   "creationTag": {
     "versionNumber": 0,
@@ -108,7 +108,7 @@
       },
       {
         "name": "merchant_category_id",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "item_category",
