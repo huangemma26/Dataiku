@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116666312
+    "lastModifiedOn": 1595116675547
   },
   "creationTag": {
     "versionNumber": 0,
@@ -132,7 +132,7 @@
       },
       {
         "name": "card_latitude",
-        "type": "string"
+        "type": "float"
       },
       {
         "name": "card_longitude",
