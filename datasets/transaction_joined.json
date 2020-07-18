@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116714921
+    "lastModifiedOn": 1595116730893
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,7 +96,7 @@
       },
       {
         "name": "purchase_date",
-        "type": "date"
+        "type": "string"
       },
       {
         "name": "card_id",
