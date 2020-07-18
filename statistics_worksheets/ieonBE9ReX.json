@@ -29,16 +29,26 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "shapiro",
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "purchase_amount",
+          "type": "CONTINUOUS"
+        },
+        "id": "hng1KEr"
+      }
+    ],
     "id": "uJu2LdB"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116521242
+    "lastModifiedOn": 1595116601418
   },
   "creationTag": {
     "versionNumber": 0,
