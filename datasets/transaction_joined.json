@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595116682434
+    "lastModifiedOn": 1595116685439
   },
   "creationTag": {
     "versionNumber": 0,
@@ -144,7 +144,7 @@
       },
       {
         "name": "card_age",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "merchant_subsector_description",
