@@ -122,7 +122,8 @@
       }
     }
   },
-  "name": "CC_Advanced_core",
+  "name": "CC_Advanced_Core",
+  "imgPattern": 6,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -178,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593823449776
+    "lastModifiedOn": 1595188681290
   },
   "creationTag": {
     "versionNumber": 0,
