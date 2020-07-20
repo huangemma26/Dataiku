@@ -12,7 +12,7 @@
   "gpuAllowGrowth": false,
   "outputProbaPercentiles": false,
   "outputProbabilities": true,
-  "forceOriginalEngine": false,
+  "forceOriginalEngine": true,
   "individualExplanationParams": {
     "drawInScoredSet": false,
     "subChunkSize": 5000,
@@ -22,7 +22,7 @@
   },
   "forcedClassifierThreshold": 0,
   "batchSize": 100,
-  "outputExplanations": false,
+  "outputExplanations": true,
   "overrideModelSpecifiedThreshold": false,
   "sparkParams": {
     "pipelineAllowMerge": true,
